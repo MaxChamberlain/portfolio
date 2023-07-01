@@ -33,6 +33,7 @@ export default function Home() {
               width={350}
               height={350}
               className='-mt-6'
+              loading='eager'
             />
           </div>
           <div className='max-w-xs md:max-w-md lg:max-w-lg flex flex-col gap-8 items-center text-center lg:text-start'>
