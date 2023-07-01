@@ -223,9 +223,9 @@ export default function Home() {
               'TailwindCSS'
             ],
             links: {
-              main: 'workspace-rental-example.vercel.app',
+              main: 'https://workspace-rental-example.vercel.app',
               github: 'https://github.com/MaxChamberlain/workspace-rental-example',
-              live: 'workspace-rental-example.vercel.app'
+              live: 'https://workspace-rental-example.vercel.app'
             },
           }}
         />
