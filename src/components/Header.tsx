@@ -15,7 +15,7 @@ export default function Header(){
         } else {
             document.documentElement.classList.remove('dark')
         }
-    }, [window])
+    }, [])
 
     return (
         <div className="w-screen px-12 py-6 flex justify-between items-center bg-white dark:bg-zinc-800 sticky border-b dark:border-b-black shadow-xm top-0 text-stone-700 dark:text-stone-100 z-50">

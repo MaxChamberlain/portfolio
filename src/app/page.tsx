@@ -37,7 +37,7 @@ export default function Home() {
           </div>
           <div className='max-w-xs md:max-w-md lg:max-w-lg flex flex-col gap-8 items-center text-center lg:text-start'>
             <h1 className='lg:text-[3.4rem] md:text-2xl text-xl font-bold lg:leading-[4rem]'>Front-End React Developer</h1>
-            <p className='lg:text-base md:text-sm text-xs-'>Hi, I'm Max Chamberlain. A passionate Front-end React Developer based in Denver, Colorado. 📍</p>
+            <p className='lg:text-base md:text-sm text-xs-'>Hi, I&apos;m Max Chamberlain. A passionate Front-end React Developer based in Denver, Colorado. 📍</p>
             <div className='flex justify-center lg:justify-start xl:justify-start gap-2 w-full'>
               <a href='https://www.linkedin.com/in/max-chamberlain-2430811b0/' target='_blank' rel='noreferrer'>
                 <Image
@@ -282,7 +282,7 @@ export default function Home() {
         <div className='h-full max-w-xs lg:max-w-5xl flex flex-col w-full justify-start text-center lg:text-start lg:items-start items-center gap-4'>
           <span className='font-bold text-lg' style={{ color: 'hsl(220, 100%, 60%)' }}>CONTACT</span>
           <span className='font-bold text-stone-700 dark:text-stone-100 text-base md:text-xl lg:text-2xl'>
-          Don't be shy! Hit me up! 👇
+          Don&apos;t be shy! Hit me up! 👇
           </span>
         </div>
         <div className='flex gap-16 md:gap-24 items-center justify-start max-w-xs lg:max-w-5xl w-full flex-col lg:flex-row'>
