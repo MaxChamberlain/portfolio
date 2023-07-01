@@ -16,6 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+          <meta name="robots" content="all" />
+      </head>
       <body className={inter.className} style={{ maxWidth: '100vw' }}>
         <Header />
         {children}
