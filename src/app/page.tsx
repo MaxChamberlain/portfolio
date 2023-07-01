@@ -224,8 +224,8 @@ export default function Home() {
             ],
             links: {
               main: 'https://workspace-rental-example-5e40l57rb-maxchamberlain.vercel.app',
-              github: 'github.com',
-              live: 'live.com'
+              github: 'https://github.com/MaxChamberlain/workspace-rental-example',
+              live: 'https://workspace-rental-example-5e40l57rb-maxchamberlain.vercel.app'
             },
           }}
         />
