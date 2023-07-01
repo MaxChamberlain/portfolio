@@ -13,7 +13,7 @@ import deskImage from '../assets/images/desk.png'
 import devIcon from '../assets/svgs/front-end-developer-icon.svg'
 import guyOnLaptop from '../assets/images/guy-on-laptop-emoji.png'
 import DevProjectCard from '@/components/DevProjectCard'
-import carRental from '../assets/images/car-rental-demo.webp'
+import carRental from '../assets/images/rental.png'
 import coindom from '../assets/images/coindom.png'
 import gymate from '../assets/images/gymate.webp'
 import raouf from '../assets/images/raouf.webp'
@@ -213,15 +213,16 @@ export default function Home() {
         </div>
         <DevProjectCard
           project={{
-            name: 'CAR RENTAL 🚗',
-            description: 'A car rental website is an online platform that allows users to rent cars for personal or business use. The website provides an interface for searching, comparing, and reserving cars.',
+            name: 'WORKSPACE RENTAL 🏢',
+            description: 'A workspace rental website is a comprehensive resource for workspace information, class schedules, membership options, and tools to help users',
             image: carRental,
             techStack: [
               'React',
-              'SCSS'
+              'NextJS',
+              'TailwindCSS'
             ],
             links: {
-              main: 'https://car-rental-website.vercel.app/',
+              main: 'https://workspace-rental-example-5e40l57rb-maxchamberlain.vercel.app',
               github: 'github.com',
               live: 'live.com'
             },
