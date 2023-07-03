@@ -14,7 +14,7 @@ import devIcon from '../assets/svgs/front-end-developer-icon.svg'
 import guyOnLaptop from '../assets/images/guy-on-laptop-emoji.png'
 import DevProjectCard from '@/components/DevProjectCard'
 import carRental from '../assets/images/rental.png'
-import coindom from '../assets/images/coindom.png'
+import proxier from '../assets/images/proxier.png'
 import gymate from '../assets/images/gymate.webp'
 import raouf from '../assets/images/raouf.webp'
 import mapIcon from '../assets/svgs/map-location-dot-solid.svg'
@@ -231,50 +231,18 @@ export default function Home() {
         />
         <DevProjectCard
           project={{
-            name: 'COINDOM 🪙',
-            description: 'Coindom is a crypto app that allows users to search for information about various cryptocurrencies in real-time.',
-            image: coindom,
+            name: 'Proxier',
+            description: 'Proixier is a web scraping tool that allows you to scrape data from any website. It is a simple and easy to use tool that can be used by anyone.',
+            image: proxier,
             techStack: [
               'React',
-              'SCSS'
+              'NextJS',
+              'TailwindCSS'
             ],
             links: {
-              main: 'https://car-rental-website.vercel.app/',
-              github: 'github.com',
-              live: 'live.com'
-            },
-          }}
-          reverse
-        />
-        <DevProjectCard
-          project={{
-            name: 'GYMATE 🏋️',
-            description: 'A gym website is a comprehensive resource for fitness information, class schedules, membership options, and tools to help users achieve their fitness goals.',
-            image: gymate,
-            techStack: [
-              'React',
-              'Tailwind CSS'
-            ],
-            links: {
-              main: 'https://car-rental-website.vercel.app/',
-              github: 'github.com',
-              live: 'live.com'
-            },
-          }}
-        />
-        <DevProjectCard
-          project={{
-            name: 'RAOUF ECOMMERCE 🛒',
-            description: 'With a focus on simplicity and clean design, this store prioritize user experience, making it easy for customers to find and purchase the products they need.',
-            image: raouf,
-            techStack: [
-              'React',
-              'Vanilla CSS'
-            ],
-            links: {
-              main: 'https://car-rental-website.vercel.app/',
-              github: 'github.com',
-              live: 'live.com'
+              main: 'https://proxier-webscrape-example.vercel.app/',
+              github: 'https://github.com/MaxChamberlain/proxier-webscrape-example',
+              live: 'https://proxier-webscrape-example.vercel.app/'
             },
           }}
           reverse
