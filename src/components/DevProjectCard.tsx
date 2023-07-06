@@ -28,7 +28,7 @@ export default function DevProjectCard({ project, reverse }: { project: Project,
                 </div>
                 <div className='flex justify-center gap-4'>
                     {project.techStack.map((tech, index) => (
-                        <div key={index} className='font-bold bg-white dark:bg-zinc-600 dark:text-white drop-shadow-md rounded-xl text-xs sm:text-sm md:text-base p-2 md:p-4 flex items-center justify-center'>
+                        <div key={index} className='font-bold bg-white dark:bg-zinc-600 text-black dark:text-white drop-shadow-md rounded-xl text-xs sm:text-sm md:text-base p-2 md:p-4 flex items-center justify-center'>
                             {tech}
                         </div>
                     ))}
@@ -36,14 +36,14 @@ export default function DevProjectCard({ project, reverse }: { project: Project,
                 <div className='flex justify-center items-center gap-4'>
                     {project.links.github && (
                         <Link href={project.links.github}>
-                            <div className= 'bg-transparent dark:text-white p-4 flex items-center gap-2 justify-center text-xs sm:text-sm md:text-base whitespace-nowrap'>
+                            <div className= 'bg-transparent text-black dark:text-white p-4 flex items-center gap-2 justify-center text-xs sm:text-sm md:text-base whitespace-nowrap'>
                                 Code <Image src={githubLogo} alt='github' width={30} height={30} className='dark:invert' />
                             </div>
                         </Link>
                     )}
                     {project.links.live && (
                         <Link href={project.links.live}>
-                            <div className= 'p-4 bg-transparent dark:text-white flex items-center gap-2 justify-center text-xs sm:text-sm md:text-base whitespace-nowrap'>
+                            <div className= 'p-4 bg-transparent text-black dark:text-white flex items-center gap-2 justify-center text-xs sm:text-sm md:text-base whitespace-nowrap'>
                                 Live Demo <Image src={externalIcon} alt='github' width={20} height={20} className='dark:invert' />
                             </div>
                         </Link>

@@ -15,8 +15,7 @@ import guyOnLaptop from '../assets/images/guy-on-laptop-emoji.png'
 import DevProjectCard from '@/components/DevProjectCard'
 import carRental from '../assets/images/rental.png'
 import proxier from '../assets/images/proxier.png'
-import gymate from '../assets/images/gymate.webp'
-import raouf from '../assets/images/raouf.webp'
+import maxauto from '../assets/images/info_maxauto.png'
 import mapIcon from '../assets/svgs/map-location-dot-solid.svg'
 import envelope from '../assets/svgs/envelope-solid.svg'
 import Link from 'next/link'
@@ -246,6 +245,23 @@ export default function Home() {
             },
           }}
           reverse
+        />
+        <DevProjectCard
+          project={{
+            name: 'Max Autolytics',
+            description: 'Max Autolytics is a data analytics/dashboard tool used by car dealers to gain insight into their store. This app is the information website for the tool. (THIS IS A REAL APP)',
+            image: maxauto,
+            techStack: [
+              'React',
+              'Firebase',
+              'ExpressJS',
+            ],
+            links: {
+              main: 'https://info.maxautolytics.com/',
+              github: 'https://github.com/MaxChamberlain/info-max-autolytics',
+              live: 'https://info.maxautolytics.com'
+            },
+          }}
         />
       </section>
       <section id='contact' className='bg-white dark:bg-transparent flex items-center flex-col justify-center py-24 gap-16 w-full'>
