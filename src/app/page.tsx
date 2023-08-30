@@ -35,7 +35,7 @@ export default function Home() {
               loading='eager'
             />
           </div>
-          <div className='max-w-xs md:max-w-md lg:max-w-lg flex flex-col gap-8 items-center text-center lg:text-start'>
+          <article className='max-w-xs md:max-w-md lg:max-w-lg flex flex-col gap-8 items-center text-center lg:text-start'>
             <h1 className='lg:text-[3.4rem] md:text-2xl text-xl font-bold lg:leading-[4rem]'>Front-End React Developer</h1>
             <p className='lg:text-base md:text-sm text-xs-'>Hi, I&apos;m Max Chamberlain. A passionate Front-end React Developer based in Denver, Colorado. 📍</p>
             <div className='flex justify-center lg:justify-start xl:justify-start gap-2 w-full'>
@@ -58,7 +58,7 @@ export default function Home() {
                 />
               </a>
             </div>
-          </div>
+          </article>
           <div className='rounded-full w-40 lg:w-72 aspect-square overflow-hidden border-2 border-black dark:border-stone-100 hidden lg:block'>
             <Image
               src={selfImage}
@@ -70,11 +70,11 @@ export default function Home() {
           </div>
         </div>
         <div className='flex flex-col lg:flex-row gap-6 justify-start items-center w-full max-w-sm md:max-w-4xl'>
-          <span className='font-normal text-xl min-w-fit'>Tech Stack</span>
+          <h1 className='font-normal text-xl min-w-fit'>Tech Stack</h1>
           <span className='h-px w-6 lg:h-6 lg:w-px bg-stone-500 min-w-fit'></span>
           <div>
-            <div className='flex flex-wrap md:flex-nowrap justify-center gap-8 items-center h-full md:ml-12'>
-              <div className='bg-white dark:bg-zinc-700 shadow rounded-full w-16 h-16 flex items-center justify-center gap-2 hover:w-28 transition-all duration-100 group cursor-pointer oveflow-hidden'>
+            <ul className='flex flex-wrap md:flex-nowrap justify-center gap-8 items-center h-full md:ml-12'>
+              <li className='bg-white dark:bg-zinc-700 shadow rounded-full w-16 h-16 flex items-center justify-center gap-2 hover:w-28 transition-all duration-100 group cursor-pointer oveflow-hidden'>
                 <Image
                   src={htmlLogo}
                   alt='html'
@@ -82,11 +82,11 @@ export default function Home() {
                   height={30}
                   className='pointer-events-none'
                 />
-                <div className='absolute opacity-0 transition-all duration-100  dark:text-stone-100 group-hover:relative group-hover:opacity-100  delay-0 font-bold group-hover:delay-200 pointer-events-none'>
+                <label className='absolute opacity-0 transition-all duration-100  dark:text-stone-100 group-hover:relative group-hover:opacity-100  delay-0 font-bold group-hover:delay-200 pointer-events-none'>
                   HTML
-                </div>
-              </div>
-              <div className='bg-white dark:bg-zinc-700 shadow rounded-full w-16 h-16 flex items-center justify-center gap-2 hover:w-28 transition-all duration-100 group cursor-pointer oveflow-hidden'>
+                </label>
+              </li>
+              <li className='bg-white dark:bg-zinc-700 shadow rounded-full w-16 h-16 flex items-center justify-center gap-2 hover:w-28 transition-all duration-100 group cursor-pointer oveflow-hidden'>
                 <Image
                   src={cssLogo}
                   alt='css'
@@ -94,11 +94,11 @@ export default function Home() {
                   height={30}
                   className='pointer-events-none'
                 />
-                <div className='absolute opacity-0 transition-all duration-100  dark:text-stone-100 group-hover:relative group-hover:opacity-100  delay-0 font-bold group-hover:delay-200 pointer-events-none'>
+                <label className='absolute opacity-0 transition-all duration-100  dark:text-stone-100 group-hover:relative group-hover:opacity-100  delay-0 font-bold group-hover:delay-200 pointer-events-none'>
                   CSS
-                </div>
-              </div>
-              <div className='bg-white dark:bg-zinc-700 shadow rounded-full w-16 h-16 flex items-center justify-center gap-2 hover:w-36 transition-all duration-100 group cursor-pointer oveflow-hidden'>
+                </label>
+              </li>
+              <li className='bg-white dark:bg-zinc-700 shadow rounded-full w-16 h-16 flex items-center justify-center gap-2 hover:w-36 transition-all duration-100 group cursor-pointer oveflow-hidden'>
                 <Image
                   src={jsLogo}
                   alt='javascript'
@@ -106,11 +106,11 @@ export default function Home() {
                   height={30}
                   className='pointer-events-none'
                 />
-                <div className='absolute opacity-0 transition-all duration-100  dark:text-stone-100 group-hover:relative group-hover:opacity-100 delay-0 font-bold group-hover:delay-200 pointer-events-none'>
+                <label className='absolute opacity-0 transition-all duration-100  dark:text-stone-100 group-hover:relative group-hover:opacity-100 delay-0 font-bold group-hover:delay-200 pointer-events-none'>
                   JavaScript
-                </div>
-              </div>
-              <div className='bg-white dark:bg-zinc-700 shadow rounded-full w-16 h-16 flex items-center justify-center gap-2 hover:w-32 transition-all duration-100 group cursor-pointer oveflow-hidden'>
+                </label>
+              </li>
+              <li className='bg-white dark:bg-zinc-700 shadow rounded-full w-16 h-16 flex items-center justify-center gap-2 hover:w-32 transition-all duration-100 group cursor-pointer oveflow-hidden'>
                 <Image
                   src={reactLogo}
                   alt='react'
@@ -118,11 +118,11 @@ export default function Home() {
                   height={30}
                   className='pointer-events-none'
                 />
-                <div className='absolute opacity-0 transition-all duration-100  dark:text-stone-100 group-hover:relative group-hover:opacity-100 delay-0 font-bold group-hover:delay-200 pointer-events-none'>
+                <label className='absolute opacity-0 transition-all duration-100  dark:text-stone-100 group-hover:relative group-hover:opacity-100 delay-0 font-bold group-hover:delay-200 pointer-events-none'>
                   ReactJS
-                </div>
-              </div>
-              <div className='bg-white dark:bg-zinc-700 shadow rounded-full w-16 h-16 flex items-center justify-center gap-2 hover:w-40 transition-all duration-100 group cursor-pointer oveflow-hidden'>
+                </label>
+              </li>
+              <li className='bg-white dark:bg-zinc-700 shadow rounded-full w-16 h-16 flex items-center justify-center gap-2 hover:w-40 transition-all duration-100 group cursor-pointer oveflow-hidden'>
                 <Image
                   src={tailwind}
                   alt='tailwind'
@@ -130,11 +130,11 @@ export default function Home() {
                   height={30}
                   className='pointer-events-none'
                 />
-                <div className='absolute opacity-0 transition-all duration-100  dark:text-stone-100 group-hover:relative group-hover:opacity-100  delay-0 font-bold group-hover:delay-200 pointer-events-none'>
+                <label className='absolute opacity-0 transition-all duration-100  dark:text-stone-100 group-hover:relative group-hover:opacity-100  delay-0 font-bold group-hover:delay-200 pointer-events-none'>
                   TailwindCSS
-                </div>
-              </div>
-              <div className='bg-white dark:bg-zinc-700 shadow rounded-full w-16 h-16 flex items-center justify-center gap-2 hover:w-36 transition-all duration-100 group cursor-pointer oveflow-hidden'>
+                </label>
+              </li>
+              <li className='bg-white dark:bg-zinc-700 shadow rounded-full w-16 h-16 flex items-center justify-center gap-2 hover:w-36 transition-all duration-100 group cursor-pointer oveflow-hidden'>
                 <Image
                   src={expressLogo}
                   alt='express js'
@@ -142,11 +142,11 @@ export default function Home() {
                   height={30}
                   className='pointer-events-none dark:invert'
                 />
-                <div className='absolute opacity-0 transition-all duration-200  dark:text-stone-100 group-hover:relative group-hover:opacity-100  delay-0 font-bold group-hover:delay-200 pointer-events-none'>
+                <label className='absolute opacity-0 transition-all duration-200  dark:text-stone-100 group-hover:relative group-hover:opacity-100  delay-0 font-bold group-hover:delay-200 pointer-events-none'>
                   ExpressJS
-                </div>
-              </div>
-              <div className='bg-white dark:bg-zinc-700 shadow rounded-full w-16 h-16 flex items-center justify-center gap-2 hover:w-32 transition-all duration-100 group cursor-pointer oveflow-hidden'>
+                </label>
+              </li>
+              <li className='bg-white dark:bg-zinc-700 shadow rounded-full w-16 h-16 flex items-center justify-center gap-2 hover:w-32 transition-all duration-100 group cursor-pointer oveflow-hidden'>
                 <Image
                   src={firebaseLogo}
                   alt='firebase'
@@ -154,11 +154,11 @@ export default function Home() {
                   height={30}
                   className='pointer-events-none'
                 />
-                <div className='absolute opacity-0 transition-all duration-100  dark:text-stone-100 group-hover:relative group-hover:opacity-100  delay-0 font-bold group-hover:delay-200 pointer-events-none'>
+                <label className='absolute opacity-0 transition-all duration-100  dark:text-stone-100 group-hover:relative group-hover:opacity-100  delay-0 font-bold group-hover:delay-200 pointer-events-none'>
                   Firebase
-                </div>
-              </div>
-            </div>
+                </label>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -189,89 +189,91 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className='h-full max-w-[92%] lg:max-w-md flex flex-col justify-start text-center lg:text-start lg:items-start items-center gap-4'>
-          <span className='font-bold text-lg' style={{ color: 'hsl(220, 100%, 60%)' }}>ABOUT ME</span>
-          <span className='font-bold text-stone-700 dark:text-stone-100 text-base sm:text-xl md:text-2xl'>
+        <article className='h-full max-w-[92%] lg:max-w-md flex flex-col justify-start text-center lg:text-start lg:items-start items-center gap-4'>
+          <h2 className='font-bold text-lg' style={{ color: 'hsl(220, 100%, 60%)' }}>ABOUT ME</h2>
+          <h1 className='font-bold text-stone-700 dark:text-stone-100 text-base sm:text-xl md:text-2xl'>
             A passionate Front-end Developer
             based in Denver, Colorado 📍  
-          </span>
-          <span className='text-stone-500 dark:text-stone-400 text-sm sm:text-lg'>
+          </h1>
+          <p className='text-stone-500 dark:text-stone-400 text-sm sm:text-lg'>
             As a Front-End Developer, I possess a deep understanding of skills in HTML, CSS, JavaScript, React and Tailwind. 
             I excel in designing and maintaining responsive websites that offer a smooth user experience. 
             My expertise lies in crafting dynamic, engaging interfaces through writing clean and optimized code 
             and utilizing cutting-edge development tools and techniques. I am also a team player who both enjoys and thrives in 
             collaborating with cross-functional teams to produce outstanding web applications.
-          </span>
-        </div>
+          </p>
+        </article>
       </section>
       <section id='projects' className='bg-stone-100/80 dark:bg-zinc-900 flex items-center flex-col justify-center py-36 gap-16 w-full'>
-        <div className='h-full max-w-xs lg:max-w-5xl flex flex-col w-full justify-start text-center lg:text-start lg:items-start items-center gap-4'>
-          <span className='font-bold text-lg' style={{ color: 'hsl(220, 100%, 60%)' }}>PORTFOLIO</span>
-          <span className='font-bold text-stone-700 dark:text-stone-100 text-base md:text-xl lg:text-2xl'>
+        <article className='h-full max-w-xs lg:max-w-5xl flex flex-col w-full justify-start text-center lg:text-start lg:items-start items-center gap-4'>
+          <h2 className='font-bold text-lg' style={{ color: 'hsl(220, 100%, 60%)' }}>PORTFOLIO</h2>
+          <h1 className='font-bold text-stone-700 dark:text-stone-100 text-base md:text-xl lg:text-2xl'>
             Each project is a unique piece of development 🧩
-          </span>
-        </div>
-        <DevProjectCard
-          project={{
-            name: 'WORKSPACE RENTAL 🏢',
-            description: 'A workspace rental website is a comprehensive resource for workspace information, class schedules, membership options, and tools to help users',
-            image: carRental,
-            techStack: [
-              'React',
-              'NextJS',
-              'TailwindCSS'
-            ],
-            links: {
-              main: 'https://workspace-rental-example.vercel.app',
-              github: 'https://github.com/MaxChamberlain/workspace-rental-example',
-              live: 'https://workspace-rental-example.vercel.app'
-            },
-          }}
-        />
-        <DevProjectCard
-          project={{
-            name: 'Proxier',
-            description: 'Proixier is a web scraping tool that allows you to scrape data from any website. It is a simple and easy to use tool that can be used by anyone.',
-            image: proxier,
-            techStack: [
-              'React',
-              'NextJS',
-              'TailwindCSS'
-            ],
-            links: {
-              main: 'https://proxier-webscrape-example.vercel.app/',
-              github: 'https://github.com/MaxChamberlain/proxier-webscrape-example',
-              live: 'https://proxier-webscrape-example.vercel.app/'
-            },
-          }}
-          reverse
-        />
-        <DevProjectCard
-          project={{
-            name: 'Max Autolytics',
-            description: 'Max Autolytics is a data analytics/dashboard tool used by car dealers to gain insight into their store. This app is the information website for the tool. (THIS IS A REAL APP)',
-            image: maxauto,
-            techStack: [
-              'React',
-              'Firebase',
-              'ExpressJS',
-            ],
-            links: {
-              main: 'https://info.maxautolytics.com/',
-              github: 'https://github.com/MaxChamberlain/info-max-autolytics',
-              live: 'https://info.maxautolytics.com'
-            },
-          }}
-        />
+          </h1>
+        </article>
+        <ul className='bg-stone-100/80 dark:bg-zinc-900 flex items-center flex-col justify-center gap-16 w-full'>
+          <DevProjectCard
+            project={{
+              name: 'WORKSPACE RENTAL 🏢',
+              description: 'A workspace rental website is a comprehensive resource for workspace information, class schedules, membership options, and tools to help users',
+              image: carRental,
+              techStack: [
+                'React',
+                'NextJS',
+                'TailwindCSS'
+              ],
+              links: {
+                main: 'https://workspace-rental-example.vercel.app',
+                github: 'https://github.com/MaxChamberlain/workspace-rental-example',
+                live: 'https://workspace-rental-example.vercel.app'
+              },
+            }}
+          />
+          <DevProjectCard
+            project={{
+              name: 'Proxier',
+              description: 'Proixier is a web scraping tool that allows you to scrape data from any website. It is a simple and easy to use tool that can be used by anyone.',
+              image: proxier,
+              techStack: [
+                'React',
+                'NextJS',
+                'TailwindCSS'
+              ],
+              links: {
+                main: 'https://proxier-webscrape-example.vercel.app/',
+                github: 'https://github.com/MaxChamberlain/proxier-webscrape-example',
+                live: 'https://proxier-webscrape-example.vercel.app/'
+              },
+            }}
+            reverse
+          />
+          <DevProjectCard
+            project={{
+              name: 'Max Autolytics',
+              description: 'Max Autolytics is a data analytics/dashboard tool used by car dealers to gain insight into their store. This app is the information website for the tool. (THIS IS A REAL APP)',
+              image: maxauto,
+              techStack: [
+                'React',
+                'Firebase',
+                'ExpressJS',
+              ],
+              links: {
+                main: 'https://info.maxautolytics.com/',
+                github: 'https://github.com/MaxChamberlain/info-max-autolytics',
+                live: 'https://info.maxautolytics.com'
+              },
+            }}
+          />
+        </ul>
       </section>
       <section id='contact' className='bg-white dark:bg-transparent flex items-center flex-col justify-center py-24 gap-16 w-full'>
         <div className='h-full max-w-xs lg:max-w-5xl flex flex-col w-full justify-start text-center lg:text-start lg:items-start items-center gap-4'>
-          <span className='font-bold text-lg' style={{ color: 'hsl(220, 100%, 60%)' }}>CONTACT</span>
-          <span className='font-bold text-stone-700 dark:text-stone-100 text-base md:text-xl lg:text-2xl'>
+          <h2 className='font-bold text-lg' style={{ color: 'hsl(220, 100%, 60%)' }}>CONTACT</h2>
+          <h1 className='font-bold text-stone-700 dark:text-stone-100 text-base md:text-xl lg:text-2xl'>
           Don&apos;t be shy! Hit me up! 👇
-          </span>
+          </h1>
         </div>
-        <div className='flex gap-16 md:gap-24 items-center justify-start max-w-xs lg:max-w-5xl w-full flex-col lg:flex-row'>
+        <article className='flex gap-16 md:gap-24 items-center justify-start max-w-xs lg:max-w-5xl w-full flex-col lg:flex-row'>
           <div className='flex gap-4 items-center flex-col lg:flex-row text-center lg:text-start'>
             <div className='bg-white rounded-full shadow p-4 md:p-6'>
               <Image
@@ -282,12 +284,12 @@ export default function Home() {
               />
             </div>
             <div className='flex flex-col justify-around h-full'>
-              <span className='font-bold text-stone-700 dark:text-stone-100 text-base md:text-xl lg:text-xl'>
+              <h2 className='font-bold text-stone-700 dark:text-stone-100 text-base md:text-xl lg:text-xl'>
                 Location
-              </span>
-              <span className='text-stone-500 dark:text-stone-400 text-sm md:text-lg'>
+              </h2>
+              <h3 className='text-stone-500 dark:text-stone-400 text-sm md:text-lg'>
                 Denver, Colorado
-              </span>
+              </h3>
             </div>
           </div>
           <div className='flex gap-4 items-center flex-col lg:flex-row text-center lg:text-start'>
@@ -300,19 +302,19 @@ export default function Home() {
               />
             </div>
             <div className='flex flex-col justify-around h-full'>
-              <span className='font-bold text-stone-700 dark:text-stone-100 text-base md:text-xl lg:text-xl'>
+              <h2 className='font-bold text-stone-700 dark:text-stone-100 text-base md:text-xl lg:text-xl'>
                 Mail
-              </span>
+              </h2>
               <Link href='mailto:maxintegllc@gmail.com'>
-                <span className='text-stone-500 dark:text-stone-400 text-sm md:text-lg hover:text-blue-500 transition-colors duration-500'>
+                <h3 className='text-stone-500 dark:text-stone-400 text-sm md:text-lg hover:text-blue-500 transition-colors duration-500'>
                   maxintegllc@gmail.com
-                </span>
+                </h3>
               </Link>
             </div>
           </div>
-        </div>
+        </article>
       </section>
-      <section className='bg-slate-800 dark:bg-slate-900 p-12 gap-16 w-full flex justify-center'>
+      <footer className='bg-slate-800 dark:bg-slate-900 p-12 gap-16 w-full flex justify-center'>
         <div className='flex items-center justify-between w-full max-w-5xl flex-col lg:flex-row gap-8'>
           <span className='font-bold text-stone-100 text-sm w-56 md:w-fit md:text-lg lg:text-xl text-center md:text-start'>
             © 2023 Max Integrations LLC. All rights reserved.
@@ -338,7 +340,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-      </section>
+      </footer>
     </main>
   )
 }

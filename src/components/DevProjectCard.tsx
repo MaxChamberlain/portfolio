@@ -6,7 +6,7 @@ import externalIcon from '../assets/svgs/open-external-link-icon.svg'
 
 export default function DevProjectCard({ project, reverse }: { project: Project, reverse?: boolean }) {
     return(
-        <div className={`flex justify-center gap-4 max-w-5xl w-11/12 xl:w-full p-4 bg-white dark:bg-zinc-800 rounded-xl shadow-md flex-col ${reverse ? 'xl:flex-row-reverse' : 'xl:flex-row'}`}>
+        <li className={`flex justify-center gap-4 max-w-5xl w-11/12 xl:w-full p-4 bg-white dark:bg-zinc-800 rounded-xl shadow-md flex-col ${reverse ? 'xl:flex-row-reverse' : 'xl:flex-row'}`}>
             <Link href={project.links.main}>
                 <div className='relative w-full xl:w-[35rem] h-72 md:h-96 overflow-hidden rounded-xl drop-shadow-md'>
                     <Image 
@@ -19,13 +19,13 @@ export default function DevProjectCard({ project, reverse }: { project: Project,
                     />
                 </div>
             </Link>
-            <div className='w-full xl:max-w-2xl p-8 pb-0 flex flex-col items-center justify-center gap-4'>
-                <div className='font-bold uppercase text-stone-700 dark:text-stone-100'>
+            <article className='w-full xl:max-w-2xl p-8 pb-0 flex flex-col items-center justify-center gap-4'>
+                <h2 className='font-bold uppercase text-stone-700 dark:text-stone-100'>
                     {project.name}
-                </div>
-                <div className='text-stone-500 dark:text-stone-400 text-sm md:text-lg text-center h-1/2 flex items-center'>
+                </h2>
+                <p className='text-stone-500 dark:text-stone-400 text-sm md:text-lg text-center h-1/2 flex items-center'>
                     {project.description}
-                </div>
+                </p>
                 <div className='flex justify-center gap-4'>
                     {project.techStack.map((tech, index) => (
                         <div key={index} className='font-bold bg-white dark:bg-zinc-600 text-black dark:text-white drop-shadow-md rounded-xl text-xs sm:text-sm md:text-base p-2 md:p-4 flex items-center justify-center'>
@@ -49,7 +49,7 @@ export default function DevProjectCard({ project, reverse }: { project: Project,
                         </Link>
                     )}
                 </div>
-            </div>
-        </div>
+            </article>
+        </li>
     )
 }
